@@ -33,7 +33,7 @@ if dim == 2:
                             "The smaller the value is the nearer one is to the plane,\n"\
                             "   and thus the wider the viewing angle.\n",\
                         "^0?\.\d*[1-9]\d*|[1-9](\.\d*)?|1[0-4](\.\d*)?$",\
-                        5.0)
+                        3.5)
                         
     lightVec = getInput("Enter light vector...\n"\
                            "Leave blank to use defaults.\n"\
@@ -272,7 +272,7 @@ def cubeShade(vertA, vertB, vertC, vertA2D, vertB2D, vertC2D, vertD2D, lightVect
     if visibilityAngle < 90:
         fill([vertA2D[0],vertB2D[0],vertC2D[0],vertD2D[0]],\
              [vertA2D[1],vertB2D[1],vertC2D[1],vertD2D[1]],\
-             'k', alpha = reflectedAngle/180)
+             'limegreen', alpha = reflectedAngle/180)
           
 
 # Generation of shapes and drawing in 2D/3D
